@@ -3,16 +3,15 @@
 
 int main()
 {
-    int hour, min, sec;
+    int temp;
 
-    printf("Enter time in seconds: ");
-    scanf("%d", &sec);
+    printf("Enter a number: ");
+    scanf("%d", &temp);
 
-    hour = (sec/3600);
-    min = (sec - (3600*hour))/60;
-    sec = (sec - (3600*hour) - (min*60));
-
-    printf("7890 seconds = %d hours : %d minutes : %d seconds", hour, min, sec);
+    if(temp < 0)
+        printf("You entered a negative number");
+    else if(temp > 0)
+        printf("You entered a positive number");
 
     return 0;
 }

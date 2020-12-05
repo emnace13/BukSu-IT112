@@ -10,7 +10,7 @@ int main()
    spc = rows + 4 - 1;
    for(i = 1; i <= rows; i++)
    {
-         for(k=spc;k>=1;k--)
+         for(k = spc; k >= 1; k--)
             {
               printf(" ");
             }
